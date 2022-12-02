@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,29 +13,30 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
     <header class="header">
         <div class="container head">
             <nav class="main-nav">
                 <a href="./index.html" class="logo"><span>Web<span class="bg-logo">Studio</span></span></a>
                 <ul class="header-menu">
-                    <li class="item"><a class="menu" href="./index.html">Студія</a></li>
+                    <li class="item"><a class="menu" href="./studio.html">Студія</a></li>
                     <li class="item"><a class="menu current" href="./portfolio.html">Портфоліо</a></li>
                     <li class="item"><a class="menu" href="Контакти">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="social-link">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com
-                        <svg class="envelope">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link">
+                        <svg class="contact-icon" width="16" height="12">
                             <use href="./img/icons.svg#icon-envelope"></use>
-                        </svg>
+                        </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="item"><a href="tel:+380961111111" class="link">+380961111111
-                        <svg class="tel">
+                <li class="item">
+                    <a href="tel:+380961111111" class="link">
+                        <svg class="contact-icon" width="10" height="16">
                             <use href="./img/icons.svg#icon-Vector"></use>
-                        </svg>
+                        </svg>+380961111111
                     </a>
                 </li>
             </ul>
@@ -151,7 +153,7 @@
             <div class="footer-info">
                 <a href="./index.html" class="logo-footer"><span>Web<span class="bg-logo footer">Studio</span></span></a>
                 <address>
-                    <ul class="footer-link last">
+                    <ul class="footer-link">
                         <li>
                             <a href="https://goo.gl/maps/AqYwmnDAayiFbczU9" rel="noopener noreferrer" target="_blank"
                                 class="address-footer">м. Київ, пр-т Лесі Українки, 26</a>
@@ -160,33 +162,43 @@
                             <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
                         </li>
                         <li>
-                            <a href="tel:+380961111111" class="footer-link tel">+380961111111</a>
+                            <a href="tel:+380961111111" class="footer-link">+380961111111</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div class="container social">
-                <h2 class="add-up">приєднуйтесь</h2>
-                <a class="footer-team-link" href="">
-                    <svg class="footer-icon-links">
-                        <use href="./img/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-                <a class="footer-team-link" href="">
-                    <svg class="footer-icon-links">
-                        <use href="./img/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-                <a class="footer-team-link" href="">
-                    <svg class="footer-icon-links">
-                        <use href="./img/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                <a class="footer-team-link" href="">
-                    <svg class="footer-icon-links">
-                        <use href="./img/icons.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
+                        <h2 class="add-up">приєднуйтесь</h2>
+                <ul class="footer-social">
+                    <li class="soc">    
+                        <a class="footer-team-link" href="">
+                             <svg class="footer-icon-links">
+                                 <use href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="soc">
+                        <a class="footer-team-link" href="">
+                             <svg class="footer-icon-links">
+                                <use href="./img/icons.svg#icon-twitter"></use>
+                             </svg>
+                        </a>
+                    </li>
+                    <li class="soc">
+                        <a class="footer-team-link" href="">
+                             <svg class="footer-icon-links">
+                                <use href="./img/icons.svg#icon-facebook"></use>
+                             </svg>
+                        </a>
+                    </li>
+                    <li class="soc">
+                        <a class="footer-team-link" href="">
+                           <svg class="footer-icon-links">
+                                 <use href="./img/icons.svg#icon-linkedin"></use>
+                           </svg>
+                         </a>        
+                     </li>
+                </ul>
             </div>
         </div>
     </footer>
