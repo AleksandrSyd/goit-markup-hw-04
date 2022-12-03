@@ -11,6 +11,9 @@
 body {
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
+    max-width: 100%;
+    overflow-x: hidden;
+    
 }
 
 ul,
@@ -199,6 +202,7 @@ p {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--hero-color);
+        text-align: center;
         
 }
 
@@ -332,6 +336,7 @@ margin-bottom: 0;
      margin-right: 0;
 }
 .team {
+    background: #FFFFFF;
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -341,7 +346,7 @@ margin-bottom: 0;
 .command-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.19;
     color: var(--text-title-color);
     letter-spacing: 0.03em;
     text-align: center;
@@ -350,13 +355,13 @@ margin-bottom: 0;
 
 .command-text {
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.19;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
     text-align: center;
-    /* margin-bottom: 20px; */
-    
 }
+
+
 
 .comand-info {
     padding: 30px 32px;
@@ -393,8 +398,8 @@ margin-bottom: 0;
    
 }
 
-.team-link:hover,
-.team-link:focus {
+.team-link:focus,
+.team-link:hover {
     width: 44px;
     height: 44px;
     fill: #FFFFFF;
@@ -415,7 +420,8 @@ margin-bottom: 0;
 
 .brand-list {
     display: flex; 
-    margin-bottom: 0px;  
+    margin-bottom: 0px; 
+    
 }
 .all-brands {
     margin-right: 30px;
@@ -426,6 +432,8 @@ margin-bottom: 0;
 }
 
 .brands {
+    margin: 0;
+    display: flex;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -433,13 +441,13 @@ margin-bottom: 0;
     background-repeat: no-repeat;
     background-position: center;
     fill: #AFB1B8;
+    
 }
 
-
-.brands:hover,
-.brands:focus {
-border: 1px solid #2196F3;
- fill: #2196F3;
+.brands:focus,
+.brands:hover {
+ fill:#2196F3;
+ border: 1px solid #2196F3;
 }
 
 /* section portfolio */
@@ -491,11 +499,13 @@ border: 1px solid #2196F3;
 .list-portfolio {
     width: 370px; 
     margin: 15px;
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
     /* margin-right: 30px;
     margin-bottom: 30px; */
-    border: 1px solid #EEEEEE;
-    border-radius: 0px 0px 4px 4px;     
+    
 }
+
 /* .list-portfolio:nth-child(3n) {
     margin-right: 0;
 }
@@ -510,9 +520,11 @@ border: 1px solid #2196F3;
 }
 
 .portfolio-info {
-    display: inline-block;
-    margin: 0;
-
+    padding: 20px 24px;
+}
+.portfolio-link {
+    text-decoration: none;
+    margin-bottom: 0;
 }
 
 .portfolio-title {
@@ -522,8 +534,7 @@ border: 1px solid #2196F3;
     color: var(--text-title-color);
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    margin-left: 24px;
-
+    
 }
 
 .portfolio-text {
@@ -531,7 +542,7 @@ border: 1px solid #2196F3;
     line-height: 1.88;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
-    margin-left: 24px;
+    margin-bottom: 0;
       
 }
 
@@ -545,9 +556,10 @@ border: 1px solid #2196F3;
 
 .all-info {
     display: flex;
+    padding: 60px;
+    align-items: baseline;
 }
 .footer-info {
-    padding-top: 60px;
     margin-right: 70px;
      
 }
@@ -590,7 +602,8 @@ border: 1px solid #2196F3;
     margin-top: 20px;
 
 }
-.address-footer:hover {
+.address-footer:hover,
+.address-footer:focus {
     color: var(--secretion-color);
 }
 
@@ -607,7 +620,7 @@ border: 1px solid #2196F3;
 
 .footer-link:focus,
 .footer-link:hover {
-         color: var(--secretion-color);
+    color: var(--secretion-color);
 }
 
 
@@ -631,11 +644,17 @@ border: 1px solid #2196F3;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    fill: #AFB1B8; 
+    fill: var(--hero-color); 
     background: rgba(255, 255, 255, 0.1);
 }
+
 .footer-team-link:last-child {
 margin-right: 0;
+}
+
+.footer-team-link:focus,
+.footer-team-link:hover {
+    background: var(--secretion-color);
 }
 
 .footer-icon-links {
@@ -647,20 +666,11 @@ margin-right: 0;
    
 }
 
-.footer-team-link:hover {
-    width: 44px;
-    height: 44px;
-    fill: #FFFFFF;
-    background: #2196F3;
-}
 
 
 .social {
-   padding-top: 72px;
-   padding-left: 0;
-   padding-right: 0;
-   padding-bottom: 100px;
-   margin-left: 0;
+   padding: 0;
+   margin: 0;
 
 }
 
